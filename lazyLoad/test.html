@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>lazyLoad test</title>
+<style>
+	#J_Container {overflow:hidden;zoom:1;}
+    .item {float:left;width:19.9%;overflow:hidden;text-align:center;padding:10px 0;}
+    .item img {height:140px;}
+</style>
+<script src="../jquery.js"></script>
+<script src="lazyload.js"></script>
+</head>
+
+<body>
+<div id="J_Container">
+	<h2>Manual load</h2>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=921702660,9907792&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=356334678,2634692201&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1002321811,1354546324&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=211633120,1138100952&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=742169095,1531549013&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1660940271,1101395975&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=392016314,2124313602&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1915649287,540894738&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1422572725,796742032&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=874127646,1200726837&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=1575922814,1806977656&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=2035206442,995157550&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=499638801,641373355&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=1414115776,534620936&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1911941459,1546561563&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=2073766135,1662344717&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=2335903048,2904050635&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=121920358,1944435187&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=4037836428,259632842&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=2050334795,973717835&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=2090886962,952166133&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1473377693,402988392&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1655131242,204167159&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=341769978,104264901&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=2515262298,1593485850&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1542564289,1210354068&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1152731874,1158030739&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=881925230,1748799787&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1257133704,1116057853&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=779824447,1645960289&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=2741860381,2466698275&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=3625545115,1495017889&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1032569272,493395951&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=3428213875,1984292327&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t1.baidu.com/it/u=1107592369,832192805&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1232962093,1407097729&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1786750570,1700765115&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1030605687,1502439817&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1808975804,739155864&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t2.baidu.com/it/u=1214292946,814139268&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1029713166,1585678724&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img lazyload-src="http://t3.baidu.com/it/u=1460941991,1286152416&fm=0&gp=0.jpg" /></div>
+</div>
+<div id="J_Container2">
+	<h2>Auto load</h2>
+	<div class="item"><img src="http://t2.baidu.com/it/u=921702660,9907792&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=356334678,2634692201&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1002321811,1354546324&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=211633120,1138100952&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=742169095,1531549013&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1660940271,1101395975&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=392016314,2124313602&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1915649287,540894738&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1422572725,796742032&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=874127646,1200726837&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=1575922814,1806977656&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=2035206442,995157550&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=499638801,641373355&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=1414115776,534620936&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1911941459,1546561563&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=2073766135,1662344717&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=2335903048,2904050635&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=121920358,1944435187&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=4037836428,259632842&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=2050334795,973717835&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=2090886962,952166133&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1473377693,402988392&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1655131242,204167159&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=341769978,104264901&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=2515262298,1593485850&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1542564289,1210354068&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1152731874,1158030739&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=881925230,1748799787&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1257133704,1116057853&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=779824447,1645960289&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=2741860381,2466698275&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=3625545115,1495017889&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1032569272,493395951&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=3428213875,1984292327&fm=4&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t1.baidu.com/it/u=1107592369,832192805&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1232962093,1407097729&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1786750570,1700765115&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1030605687,1502439817&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1808975804,739155864&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t2.baidu.com/it/u=1214292946,814139268&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1029713166,1585678724&fm=0&gp=0.jpg" /></div>
+	<div class="item"><img src="http://t3.baidu.com/it/u=1460941991,1286152416&fm=0&gp=0.jpg" /></div>
+</div>
+<script>
+$('#J_Container').lazyLoad();
+$('#J_Container2').lazyLoad('auto');
+</script>
+</body>
+
+</html>

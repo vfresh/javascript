@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script src="../jquery.js"></script>
+<script src="asynload.js"></script>
+</head>
+
+<body>
+<div class="a">
+aaa
+</div>
+<script>
+function prt() {
+	try {
+		console.log(arguments);
+	}catch(e) {
+		var w = document.createElement('div');
+		with(w.style) {
+			borderBottom = 'dashed #996600 1px';
+			backgroundColor = '#FFF9EC';
+			padding= '8px';
+			marginBottom = '5px'
+		}
+		w.innerHTML = ([].slice.call(arguments)).join('\t,\t');
+		(document.body).insertBefore(w,document.body.childNodes[0]);
+	}
+}
+
+$.use('1 2',function () {
+	prt(1);
+});
+$.use('1 2',function () {
+	prt('2');
+});
+$.use('1',function () {
+	prt('3');
+});
+$.use('1',function () {
+	prt('4');
+});
+$.use('2',function () {
+	prt('5');
+});
+setTimeout(function () {
+$.use('2',function () {
+	prt('6');
+});
+$.use('a.css',function () {
+	//alert('css');
+});
+},500)
+</script>
+</body>
+
+</html>
